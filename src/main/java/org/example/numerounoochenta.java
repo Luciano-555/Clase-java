@@ -12,11 +12,12 @@ public class numerounoochenta {
 
         for (int contador = 1; contador <= 80; contador++) {
 
-            System.out.print(""+contador);
 
 
-            if (contador %2==1){
-                System.out.print(" - Impar");
+
+            if (contador % 2 !=0){
+
+                System.out.print(contador+" - Impar");
             }
 
             if (contador > 20){
