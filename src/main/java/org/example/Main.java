@@ -8,26 +8,31 @@ import java.util.Scanner;
 public class Main {
     static void main() {
         Scanner sc = new Scanner(System.in);
+        String usuario;
+        String contraseña;
 
 
-        System.out.println("Ingrese el primer numero: ");
-        int Numero1=sc.nextInt();
+        for (int contador = 1; contador <= 4; contador++){
 
+            System.out.println("Ingrese su usuario: ");
+            usuario = sc.nextLine();
 
-        while (true){
+            System.out.println("Ingrese su contraseña: ");
+            contraseña = sc.nextLine();
 
-            if (Numero1%2==0){
-            System.out.println("Es par");
-
-            System.out.println("Ingrese otro numero: ");
-            Numero1= sc.nextInt();
+            if (usuario.equals("Perro") && contraseña.equals("Perra")){
+                System.out.println("Ingreso correctamente");
+                break;
             }
-            else {
-                System.out.println("El numero es impar");
-                System.out.println("Escribe otra vez el numero");
-                Numero1= sc.nextInt();
-            }
+            System.out.println("A usted le quedan "+(4 - contador) + " Intentos");
         }
+        System.out.println("Cuenta bloqueada");
+
+
+
+
+
+
 
     }
 }
